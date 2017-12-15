@@ -1,4 +1,159 @@
 extends ../base
 block title
+    | Index pug
 block main
-    h1 Hello index pug
+    header
+        div(class='row expanded')
+            div(class='small-2 columns logo-wrapper')
+                a(class='logo' href=('#'))
+                    b Bazz
+                        span Press
+            div(class='columns nav-menu-wrapper')
+                nav(class='menu')
+                    li
+                        a(href='#')
+                            span News
+                            |  Map
+                    li
+                        a(href='#') local news
+                    li
+                        a(href='#') world news
+                    li
+                        a(href='#') politics news
+                    li
+                        a(href='#') sports news
+                    li
+                        a(href='#') breaking news
+                    li
+                        a(href='#') more
+
+            div(class='small-2 columns header-menu-icon')
+                ul(class='menu simple')
+                    li(class='message')
+                        span 1
+                    li(class='user-icon')
+                        img(src=require("../..//images/user-icon.jpg") alt='user-icon')
+                    li(class='search')
+                        span 2
+            div(class='small-1 columns add-news-wrapper')
+                a(href='#' class='add-news') Add news
+
+    main
+        div(class="row")
+            div(class="small-6 columns")
+                div(class='main-article-wrapper')
+                    img(src=require("../..//images/img-1.jpg"), alt='img-1')
+                    div(class='article-info')
+                        div(class="row")
+                            div(class="small-6 columns article-tag") Business
+                            div(class="small-6 columns article-details-info")
+                                span(class='article-details-info-item article-views') 45
+                                span(class='article-details-info-item article-comments') 45
+                                span(class='article-details-info-item article-forks') 45
+                                span(class='article-details-info-item article-flag')
+                    h2(class='article-title') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt consectetur adipiscing elit sed do eiusmod tempor
+                    p(class='article-description') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    div(class='author-date-info') by
+                        span(class='author')  Stanislav Shcherbyn
+                        |  /
+                        span(class='date')
+            div(class="small-3 columns")
+                div(class='article-wrapper')
+                    img(src=require("../..//images/img-2.jpg"), alt='img-1')
+                    div(class='article-info')
+                        div(class="row")
+                            div(class="small-6 columns article-tag") Business
+                            div(class="small-6 columns article-details-info")
+                                span(class='article-details-info-item article-views') 45
+                                span(class='article-details-info-item article-comments') 45
+                                span(class='article-details-info-item article-forks') 45
+                                span(class='article-details-info-item article-flag')
+                    h3(class='article-title') Lorem ipsum sit consectetur elit, sed do eiusmod tempor
+                    p(class='article-description') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt
+                    div(class='author-date-info') by
+                        span(class='author')  Stanislav Shcherbyn
+                        |  /
+                        span(class='date')  Oct.10.2017
+                div(class='article-wrapper article-video')
+                    div(class='video') Video
+                    img(src=require("../..//images/img-3.jpg"), alt='img-1')
+                    div(class='article-info')
+                        div(class="row")
+                            div(class="small-6 columns article-tag") Business
+                            div(class="small-6 columns article-details-info")
+                                span(class='article-details-info-item article-views') 45
+                                span(class='article-details-info-item article-comments') 45
+                                span(class='article-details-info-item article-forks') 45
+                                span(class='article-details-info-item article-flag')
+                    h3(class='article-title') Lorem ipsum sit consectetur elit, sed do eiusmod tempor
+                    div(class='author-date-info') by
+                        span(class='author')  Stanislav Shcherbyn
+                        |  /
+                        span(class='date')  Oct.10.2017
+            div(class="small-3 columns")
+                h3(class='news-title') Popular News
+                div(class='news-wrapper')
+                    div(class='news-item')
+                        div(class='article-info')
+                            div(class="row")
+                                div(class="small-8 columns")
+                                    div(class="article-tag") Business
+                                div(class="small-4 columns article-details-info")
+                                    span(class='article-details-info-item article-views') 45
+                                    span(class='article-details-info-item article-comments') 45
+                                    span(class='article-details-info-item article-forks') 45
+                                    span(class='article-details-info-item article-flag')
+                        h4(class='article-title') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt
+                        div(class='author-date-info') by
+                            span(class='author')  Stanislav Shcherbyn
+                            |  /
+                            span(class='date')  Oct.10.2017
+                    div(class='news-item')
+
+                        div(class='article-info')
+                            div(class="row")
+                                div(class="small-8 columns")
+                                    div(class='video') Video
+                                    div(class="article-tag") enterteinment
+                                div(class="small-4 columns article-details-info")
+                                    span(class='article-details-info-item article-views') 45
+                                    span(class='article-details-info-item article-comments') 45
+                                    span(class='article-details-info-item article-forks') 45
+                                    span(class='article-details-info-item article-flag')
+                        h4(class='article-title') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt
+                        div(class='author-date-info') by
+                            span(class='author')  Stanislav Shcherbyn
+                            |  /
+                            span(class='date')  Oct.10.2017
+                    div(class='news-item')
+                        div(class='article-info')
+                            div(class="row")
+                                div(class="small-8 columns")
+                                    div(class="article-tag") Business
+                                div(class="small-4 columns article-details-info")
+                                    span(class='article-details-info-item article-views') 45
+                                    span(class='article-details-info-item article-comments') 45
+                                    span(class='article-details-info-item article-forks') 45
+                                    span(class='article-details-info-item article-flag')
+                        h4(class='article-title') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt
+                        div(class='author-date-info') by
+                            span(class='author')  Stanislav Shcherbyn
+                            |  /
+                            span(class='date')  Oct.10.2017
+                    div(class='news-item')
+                        div(class='article-info')
+                            div(class="row")
+                                div(class="small-8 columns")
+                                    div(class='video') Video
+                                    div(class="article-tag") enterteinment
+                                div(class="small-4 columns article-details-info")
+                                    span(class='article-details-info-item article-views') 45
+                                    span(class='article-details-info-item article-comments') 45
+                                    span(class='article-details-info-item article-forks') 45
+                                    span(class='article-details-info-item article-flag')
+                        h4(class='article-title') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt
+                        p(class='article-description') Lorem ipsum sit  consectetur elit, sed do eiusmod tempor incididunt
+                        div(class='author-date-info') by
+                            span(class='author')  Stanislav Shcherbyn
+                            |  /
+                            span(class='date')  Oct.10.2017

@@ -1,6 +1,8 @@
 import './index.scss';
+import '../../../node_modules/foundation-sites/scss/foundation.scss';
 
-import createMenu from '../../components/menu/menu';
-let menu = createMenu(['Главная','Блог'], 'menu');
-document.body.appendChild(menu);
-console.log("index");
+/*open_sans.load().then(function () {
+    console.log('Font is available');
+}, function () {
+    console.log('Font is not available');
+});*/
