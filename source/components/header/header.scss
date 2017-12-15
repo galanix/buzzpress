@@ -5,21 +5,26 @@
 header{
   background: #4e5d73;
   padding: 0 40px;
-  .logo-wrapper a{
-    font-size: 36px;
-    color: #fff;
-    font-family: 'Open Sans';
-    font-weight: normal;
-    text-transform: uppercase;
-    b{
-      font-family: 'Open Sans Condensed';
-      span{
-        font-family: 'Open Sans';
-      }
-    }
+  .logo-wrapper a img{
+    margin-top: 7px;
+    max-width: 150px;
   }
   .nav-menu-wrapper nav{
     margin-top: 5px;
+    li:last-child{
+      position: relative;
+    }
+    li:last-child:before{
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: -20px;
+      top: 18px;
+      background-image: url(../../images/arrow.svg);
+      background-repeat: no-repeat
+    }
     a{
       color: #fff;
       text-transform: uppercase;
@@ -27,8 +32,21 @@ header{
       font-family: 'Open Sans Condensed';
       span{
         color: #e1bd3e;
+        padding-left: 50px;
+      }
+      span:before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 25px;
+        top: 7px;
+        background-image: url(../../images/new_map.svg);
+        background-repeat: no-repeat;
       }
     }
+
   }
   .header-menu-icon ul{
     float: right;
@@ -42,17 +60,23 @@ header{
       + li{
         margin-left: 30px !important;
       }
-
-      -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
-      -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
-      box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
-
-
+    }
+    li.message{
+      padding: 3px;
+      .notifications-value{
+        position: absolute;
+        top:-3px;
+        left: -3px;
+        background: #d55b45;
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        color: #fff;
+        font-family: 'Open Sans';
+      }
     }
     li.user-icon{
-      -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0);
-      -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0);
-      box-shadow: 0px 0px 0px 1px rgba(255,255,255,0);
       img{
         width: 100%;
         height: 100%;

@@ -1,10 +1,9 @@
 block header
 header
     div(class='row expanded')
-        div(class='small-2 columns logo-wrapper')
+        div(class='small-1 columns logo-wrapper')
             a(class='logo' href=('#'))
-                b Bazz
-                    span Press
+                img(src=require("../..//images/logo-buzz.svg") alt='logo')
         div(class='columns nav-menu-wrapper')
             nav(class='menu')
                 li
@@ -27,10 +26,11 @@ header
         div(class='small-2 columns header-menu-icon')
             ul(class='menu simple')
                 li(class='message')
-                    span 1
+                    span(class="notifications-value") 3
+                    img(src=require("../..//images/notifications.svg") alt='logo')
                 li(class='user-icon')
                     img(src=require("../..//images/user-icon.jpg") alt='user-icon')
                 li(class='search')
-                    span 2
+                    img(src=require("../..//images/Search icon.svg") alt='logo')
         div(class='small-1 columns add-news-wrapper')
             a(href='#' class='add-news') Add news

@@ -4,11 +4,7 @@ module.exports = function() {
             rules: [
                 {
                     test: /\.svg$/,
-                    loader: 'svg-sprite-loader',
-                    options: {
-                        extract: true,
-                        spriteFileName: svgPath => `sprite${svgPath.substr(-4)}`
-                    }
+                    loader: iconPlugin.extract()
                 }
             ],
         },
